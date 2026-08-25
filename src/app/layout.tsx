@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { useRole } from '@/lib/auth';
 import { Badge } from '@/components/ui/badge';
 import PageTransition from '@/components/page-transition';
+import { Analytics } from '@vercel/analytics/react';
 import {
   LayoutDashboard, FilePlus, CalendarDays, LogOut, Store, ShieldCheck, Settings,
   Sun, Moon,
@@ -220,6 +221,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </p>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
