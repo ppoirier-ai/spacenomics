@@ -51,6 +51,9 @@ export async function proxy(request: NextRequest) {
     '/auth/callback',
     '/api/public-briefs',
     '/api/cron',
+    // Stripe webhook: Stripe POSTs here with no user session, so it must be
+    // reachable without auth. Signature verification happens in the handler.
+    '/api/webhooks',
   ].some((p) => pathname === p || (p !== '/' && pathname.startsWith(`${p}/`)));
 
   if (isPublic) {

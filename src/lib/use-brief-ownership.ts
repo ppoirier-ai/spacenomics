@@ -1,11 +1,15 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import type { MarketplaceBrief, PurchaseWithBrief } from '@/lib/types';
 
 /**
  * Load a marketplace brief (published/public) plus the signed-in user's
  * ownership record, if any. Shared by /preview/[id] and /checkout/[briefId].
+ *
+ * `refresh` re-runs the fetch — used by the checkout page to poll for the
+ * Stripe webhook to land the purchase after the customer returns from the
+ * hosted Checkout page.
  */
 export function useBriefWithOwnership(
   briefId: string | undefined,
@@ -15,6 +19,7 @@ export function useBriefWithOwnership(
   const [owned, setOwned] = useState<PurchaseWithBrief | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [tick, setTick] = useState(0);
 
   useEffect(() => {
     if (!briefId) return;
@@ -50,7 +55,9 @@ export function useBriefWithOwnership(
     return () => {
       active = false;
     };
-  }, [briefId, notFoundMessage]);
+  }, [briefId, notFoundMessage, tick]);
 
-  return { brief, owned, loading, error };
+  const refresh = useCallback(() => setTick((t) => t + 1), []);
+
+  return { brief, owned, loading, error, refresh };
 }

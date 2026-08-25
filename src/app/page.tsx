@@ -3,8 +3,7 @@ import { createSupabaseServiceClient } from '@/lib/supabase/server';
 import LandingPage from '@/components/landing';
 import type { MarketplaceBrief, VentureBrief } from '@/lib/types';
 import { enrichBriefs } from '@/lib/briefs';
-
-const SITE_URL = 'https://civitas-ai-one.vercel.app';
+import { SITE_URL } from '@/lib/site';
 
 /** Revalidate the landing data every hour (ISR) — new briefs appear without a deploy. */
 export const revalidate = 3600;
