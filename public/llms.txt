@@ -1,0 +1,28 @@
+# Spacenomics
+
+> Institutional-grade commercial space market intelligence. Spacenomics publishes venture briefs that tear down real commercial space opportunities — Earth observation, orbital refueling, in-space manufacturing — with bottom-up market sizing (TAM/SAM/SOM), capital requirements, unit economics ($/kg delivered, BOM costs), and ROI outlooks. Audience: commercial space founders and operators, career-aware engineers and talent, and PE/VC investors. $99.99 per brief, lifetime access, no subscription. Published by Smooth Capital.
+
+Site: https://spacenomics.smooth.fund
+
+## Key pages
+
+- [Opportunities marketplace](https://spacenomics.smooth.fund/opportunities): browse briefs by sector, capital deployable, and ROI. Every brief has a free preview.
+- [Earth Observation: The Proven Revenue Engine of the Space Economy](https://spacenomics.smooth.fund/preview/3146ec60-dbb3-420c-aa45-8044a1532102): the largest revenue-generating satellite segment outside communications; subscription data business with proven revenue.
+- [Orbital Refueling and Propellant Depots](https://spacenomics.smooth.fund/preview/25f83b04-89d8-45ad-8344-a2c6ade73a41): the purest play on the launch-cost collapse; real contracts exist, profit is future tense.
+- [Microgravity Semiconductor Manufacturing](https://spacenomics.smooth.fund/preview/08df72a8-9e42-43fc-ade4-03a92b421739): gravity destroys crystal quality on Earth; in microgravity, crystal growth becomes diffusion-controlled.
+
+## What every brief contains (7 sections)
+
+Executive summary (thesis, timing, why now) · Problem & solution · Market sizing (bottom-up TAM/SAM/SOM) · Growth outlook (CAGR, 5-year trajectory) · Capital requirements (real cost to enter) · ROI outlook (return profile, profitability) · Lifetime access (one purchase, view or download forever).
+
+## Facts
+
+- Earth observation is the largest revenue-generating satellite segment outside communications.
+- Orbital refueling revenue scales directly with launch-cost decline: every kilogram sold in orbit is a kilogram paid for at launch.
+- Microgravity removes convection during crystal growth, producing larger, purer semiconductor crystals than terrestrial furnaces.
+- Audience segments: founders & operators (TAM validation, unit economics, vendor mapping), talent & engineers (startup equity intelligence, hiring waves), PE & VC (diligence, deal flow, SPAC advisory).
+
+## Related
+
+- Publisher: Smooth Capital (https://smooth.fund) — exit preparation and AI automation for business owners; acquirer of profitable digital businesses.
+- Live treasury reporting: https://treasury.smooth.fund
