@@ -51,6 +51,11 @@ export async function proxy(request: NextRequest) {
     '/auth/callback',
     '/api/public-briefs',
     '/api/cron',
+    // SEO/GEO surfaces must be crawlable without a session (Googlebot and
+    // AI crawlers never carry one).
+    '/robots.txt',
+    '/sitemap.xml',
+    '/llms.txt',
     // Stripe webhook: Stripe POSTs here with no user session, so it must be
     // reachable without auth. Signature verification happens in the handler.
     '/api/webhooks',
