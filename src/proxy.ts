@@ -56,6 +56,8 @@ export async function proxy(request: NextRequest) {
     '/robots.txt',
     '/sitemap.xml',
     '/llms.txt',
+    // IndexNow key file (content must equal the key; see api.indexnow.org)
+    '/c775801e09cb848ae00682f14d95f0fb.txt',
     // Stripe webhook: Stripe POSTs here with no user session, so it must be
     // reachable without auth. Signature verification happens in the handler.
     '/api/webhooks',
